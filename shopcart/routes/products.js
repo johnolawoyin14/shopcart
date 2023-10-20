@@ -9,7 +9,6 @@ const { result } = require("lodash");
 const requireAuth = require("../middlewares/requireAuth");
 
 
-  require("socket.io");
   // router.use(requireAuth)
 
 // all produx=cts
