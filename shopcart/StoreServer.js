@@ -20,7 +20,7 @@ app.use(morgan("dev"));
 app.use("/docs", express.static("docs"));
 // After defining other middleware
 
-const dbUrl = "mongodb+srv://johnsegs:Johnsegs123@cluster0.ovzu5x7.mongodb.net/?retryWrites=true&w=majority/shopcart";
+const dbUrl = "mongodb+srv://johnsegs:Johnsegs123@cluster0.ovzu5x7.mongodb.net/?retryWrites=true&w=majority";
 mongoose
   .connect(dbUrl)
   .then((result) => app.listen(port, () => console.log("connected")))
